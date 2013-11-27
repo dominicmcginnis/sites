@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<project name="mcginnisFamily" default="compile" basedir=".">
+	<property name="compiler" value="C:\j2sdk1.4.2_06\bin\javac"/>
+	<property name="jdom.loc" value="c:\jdom-1.0\build\jdom.jar"/>
+	<property name="j2ee.loc" value="C:\j2sdkee1.3.1\lib\j2ee.jar"/>	
+	<property name="src" value="./src"/>
+	<property name="src-www" value="./src-www"/>
+	<property name="build" value="./bin"/>
+	<property name="build_deploy.dir" value="${build}/deployement"/>
+	<property name="common.dir" value="${build_deploy.dir}/common"/>
+	<property name="webinf.dir" value="${build_deploy.dir}/WEB-INF"/>
+	<property name="classes.dir" value="${webinf.dir}/classes"/>
+	<property name="webapp_deploy.dir" value="C:\Program Files\Apache Software Foundation\Tomcat 5.5\webapps\krypticSoul"/>
+	
+	<target name="init">
+		<mkdir dir="${build_deploy.dir}"/>
+		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${webinf.dir}"/>
+		<mkdir dir="${common.dir}"/>
+		<mkdir dir="${webinf.dir}/lib"/>
+		<mkdir dir="${webapp_deploy.dir}"/>
+	</target>
+
+	<target name="compile" depends="init">
+		<!-- Compile the java code -->
+		<javac 
+			executable="${compiler}"
+			srcdir="${src}" 
+			destdir="${classes.dir}" >
+			<classpath>
+				<pathelement path="${jdom.loc}"/>
+				<pathelement path="${j2ee.loc}"/>
+			</classpath>
+		</javac>
+		<antcall target="deploy_webapp"/>
+		<antcall target="deploy"/>
+	</target>
+		
+	<target name="deploy_webapp" depends="init">
+		<copy todir="${build_deploy.dir}" overwrite="true">
+			<fileset dir="${src-www}" >
+			</fileset>
+		</copy>
+		<!-- copy todir="${webinf.dir}/lib" overwrite="true">
+			<fileset dir="${src}/tld" >
+			</fileset>
+		</copy -->
+	</target>
+
+	<target name="deploy" depends="init, deploy_webapp">
+		<copy todir="${webapp_deploy.dir}" overwrite="true">
+			<fileset dir="${build_deploy.dir}" >
+				</fileset>
+			</copy>
+	</target>
+	
+	<target name="clean"> 
+		<delete dir="${build_deploy.dir}"/>
+		<delete dir="${webapp_deploy.dir}"/>
+	</target>
+
+</project>

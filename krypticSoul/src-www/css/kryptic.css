@@ -1,0 +1,83 @@
+<!--  
+	Created by Dominic McGinnis.
+-->
+body {
+  language: EN-US;
+  margin-width: 10;
+  left-margin: 20;
+  border: 0;
+  padding: 0;
+  background-color: #2E4670;  <!-- #0000BE;  -->
+  color: #EAEAEA;  <!-- #FFFFFF; -->
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+body.navigation {
+  background-color: #0C2D9E; <!-- #005CB9;  #2F97FF; -->
+}
+
+p {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+p.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #A70320;
+}
+
+p.nav-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #A70320;
+}
+
+p.intro {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+table {
+  background-color: #000080;
+}
+
+td {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+td.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td.intro {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+td.footer {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+a:link {
+  color: #00BE00; <!-- #993300; --> 
+}
+
+a:visited {	
+  color: #009600; <!-- #666633; -->
+}
+
+/*a:active {
+  color: 0A64BE;
+}
+
+a:hover {
+  color: DD761A;
+} */
+
+
