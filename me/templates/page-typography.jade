@@ -1,0 +1,218 @@
+doctype html
+html.no-js
+  head
+    meta(charset='utf-8')
+    title SIMPLER
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+    link(rel='stylesheet', media='all', href='css/style.css')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/
+    // JS
+    script(src='js/jquery-1.6.4.min.js')
+    script(src='js/css3-mediaqueries.js')
+    script(src='js/custom.js')
+    script(src='js/tabs.js')
+    // Tweet
+    link(rel='stylesheet', href='css/jquery.tweet.css', media='all')
+    script(src='js/tweet/jquery.tweet.js')
+    // ENDS Tweet
+    // superfish
+    link(rel='stylesheet', media='screen', href='css/superfish.css')
+    script(src='js/superfish-1.4.8/js/hoverIntent.js')
+    script(src='js/superfish-1.4.8/js/superfish.js')
+    script(src='js/superfish-1.4.8/js/supersubs.js')
+    // ENDS superfish
+    // prettyPhoto
+    script(src='js/prettyPhoto/js/jquery.prettyPhoto.js')
+    link(rel='stylesheet', href='js/prettyPhoto/css/prettyPhoto.css', media='screen')
+    // ENDS prettyPhoto
+    // poshytip
+    link(rel='stylesheet', href='js/poshytip-1.1/src/tip-twitter/tip-twitter.css')
+    link(rel='stylesheet', href='js/poshytip-1.1/src/tip-yellowsimple/tip-yellowsimple.css')
+    script(src='js/poshytip-1.1/src/jquery.poshytip.min.js')
+    // ENDS poshytip
+    // GOOGLE FONTS
+    link(href='http://fonts.googleapis.com/css?family=Arvo:400,700', rel='stylesheet', type='text/css')
+    // Flex Slider
+    link(rel='stylesheet', href='css/flexslider.css')
+    script(src='js/jquery.flexslider-min.js')
+    // ENDS Flex Slider
+    // Masonry
+    script(src='js/masonry.min.js')
+    script(src='js/imagesloaded.js')
+    // ENDS Masonry
+    // Less framework
+    link(rel='stylesheet', media='all', href='css/lessframework.css')
+    // modernizr
+    script(src='js/modernizr.js')
+    // SKIN
+    link(rel='stylesheet', media='all', href='css/skin.css')
+  body(lang='en')
+    header
+      .wrapper.clearfix
+        #logo
+          a(href='index.html')
+            img(src='img/logo.png', alt='Simpler')
+        // nav
+        ul#nav.sf-menu
+          li
+            a(href='index.html') HOME
+          li
+            a(href='blog.html') BLOG
+          li.current-menu-item
+            a(href='page.html') ABOUT
+            ul
+              li
+                a(href='page-elements.html') Elements
+              li
+                a(href='page-icons.html') Icons
+              li
+                a(href='page-typography.html') Typography
+          li
+            a(href='portfolio.html') WORK
+          li
+            a(href='contact.html') CONTACT
+          li
+            a(href='http://luiszuno.com/blog/downloads/simpler-template') DOWNLOAD NOW
+        // ends nav
+        // comboNav
+        select#comboNav
+          option(value='index.html') HOME
+          option(value='blog.html') BLOG
+          option(value='page.html') ABOUT
+          option(value='page-elements.html') - Elements -
+          option(value='page-icons.html') - Icons -
+          option(value='page-typography.html', selected='selected') - Typography -
+          option(value='portfolio.html') WORK
+          option(value='http://luiszuno.com/blog/downloads/simpler-template') DOWNLOAD NOW
+        // comboNav
+    // MAIN
+    #main
+      .wrapper.clearfix
+        // masthead
+        .masthead.clearfix
+          h1 ABOUT
+          span.subheading Typography
+        .mh-div
+        // ENDS masthead
+        // page content
+        #page-content.clearfix
+          // Dropcaps
+          h4.heading Drop caps
+          p.dropcap
+            | Aliquam enim ac eros eu erat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.Lacus enim ac eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, nt quis, accumsan porttitor, facilisis luctus, metus.Lacus eni quis,tincidunt quis, facilisis luctus.
+          p.dropcap.dark
+            | Aliquam enim ac eros eu erat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.Lacus enim ac eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, nt quis, accumsan porttitor, facilisis luctus, metus.Lacus eni quis,tincidunt quis, facilisis luctus.
+          // ENDS Dropcaps
+          .block-divider
+          // Lists
+          h4.heading Bullet list
+          .lists-check
+            ul
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+          .lists-arrow
+            ul
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+          .lists-plus
+            ul
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+          .lists-star
+            ul
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+          .lists-heart
+            ul
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+              li Lorem ipsum dolor amet
+          // ENDS  Lists
+          .block-divider
+          // Quotes
+          h4.heading Quotes
+          p
+            | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+            span.pullquote-right THIS IS A PULL QUOTE RIGHT, LOREM IPSUM DOLOR AMET
+            |  Quisque sit amet est et sapien ullamcorper pharetra.  Ut felis. Praesent dapibus, neque id cursus faucibus,  Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci.
+          p
+            span.pullquote-left THIS IS A PULL QUOTE RIGHT, LOREM IPSUM DOLOR AMET
+            |  Quisque sit amet est et sapien ullamcorper pharetra.  Ut felis. Praesent dapibus, neque id cursus faucibus,  Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim.
+          // ENDS Quotes
+          .block-divider
+          // Highlight
+          h4.heading Highlighted text
+          p
+            span.highlight Pellentesque habitant morbi tristique senectus
+            |  et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+        // ENDS page content
+        // Fold image
+        #fold
+    // ENDS MAIN
+    footer
+      .wrapper.clearfix
+        // widgets
+        ul.widget-cols.clearfix
+          li.first-col
+            .widget-block
+              h4 RECENT POSTS
+              .recent-post.clearfix
+                a.thumb(href='#')
+                  img(src='img/dummies/54x54.gif', alt='Post')
+                .post-head
+                  a(href='#') Pellentesque habitant morbi senectus
+                  span  March 12, 2011
+              .recent-post.clearfix
+                a.thumb(href='#')
+                  img(src='img/dummies/54x54.gif', alt='Post')
+                .post-head
+                  a(href='#') Pellentesque habitant morbi senectus
+                  span  March 12, 2011
+              .recent-post.clearfix
+                a.thumb(href='#')
+                  img(src='img/dummies/54x54.gif', alt='Post')
+                .post-head
+                  a(href='#') Pellentesque habitant morbi senectus
+                  span  March 12, 2011
+          li.second-col
+            .widget-block
+              h4 FREE TEMPLATES &amp; THEMES
+              p
+                | Visit 
+                a(href='http://templatecreme.com/') Template Creme
+                |  and browse the selection of well-made FREE Templates and WordPress Themes.
+          li.third-col
+            .widget-block
+              #tweets.footer-col.tweet
+                h4 TWITTER WIDGET
+          li.fourth-col
+            .widget-block
+              h4 FREE TEMPLATES &amp; THEMES
+              p
+                | Visit 
+                a(href='http://templatecreme.com/') Template Creme
+                |  and browse the selection of well-made FREE Templates and WordPress Themes.
+        // ENDS widgets
+        // bottom
+        .footer-bottom
+          .left
+            | Simpler Template by 
+            a(href='http://www.luiszuno.com') luiszuno.com
+          .right
+            ul#social-bar
+              li
+                a.poshytip(href='http://www.facebook.com', title='Become a fan')
+                  img(src='img/social/facebook.png', alt='Facebook')
+              li
+                a.poshytip(href='http://www.twitter.com', title='Follow my tweets')
+                  img(src='img/social/twitter.png', alt='twitter')
+              li
+                a.poshytip(href='http://www.google.com', title='Add to the circle')
+                  img(src='img/social/plus.png', alt='Google plus')
+        // ENDS bottom

@@ -1,0 +1,16 @@
+{
+  "name": "Me",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.9.x",
+    "jade" : ">= 1.7.x"
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm":"1.4.x"
+  }
+}
