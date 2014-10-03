@@ -14,13 +14,19 @@ app.configure(function() {
   app.set('domain', domain);
   app.set('port', process.env.PORT || 8080);
   app.set('views', __dirname + '/templates');
-  app.engine('html', require('ejs').renderFile);
+  //app.engine('html', require('ejs').renderFile);
+  // Set our default template engine to "jade"
+  app.set('view engine', 'jade');
 });
 
-app.configure('development', function(){
-  app.use(express.errorHandler());
+app.use(express.static(pub));
+app.use(express.errorHandler());
+
+app.get('/', function(req, res){
+  res.render('index', { users: users });
 });
 
+/*
 app.all('/index', function(req, res) {
 	res.render("index.html");
 });
@@ -48,7 +54,7 @@ app.all('/portfolio', function(req, res) {
 app.all('/contact', function(req, res) {
 	res.render("contact.html");
 });
-
+*/
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });

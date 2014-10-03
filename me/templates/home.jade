@@ -1,0 +1,179 @@
+doctype html
+html.no-js
+  include ./frame/head.jade
+  include ./frame/header.jade
+
+    // slider holder
+    .clearfix
+    #slider-holder.clearfix
+      // slider
+      .flexslider.home-slider
+        ul.slides
+          li
+            img(src='img/slides/01.jpg', alt='alt text')
+          li
+            img(src='img/slides/02.jpg', alt='alt text')
+            p.flex-caption Pellentesque habitant morbi  feugiat vitae.
+          li
+            img(src='img/slides/03.jpg', alt='alt text')
+      // ENDS slider
+      .home-slider-clearfix
+      // Headline
+      #headline
+        h4 HELLO, I AM FREE
+        p.headline-text
+          | Simpler template is a totally FREE template for personal and commercial projects.
+        p.headline-text
+          | If you are looking for a WordPress version try the  
+          a.read-more(href='http://themeforest.net/item/simpler-wordpress-theme/1630783?ref=Ansimuz') Premium Version
+      // ENDS headline
+    // ENDS slider holder
+
+    // MAIN
+    #main
+      .wrapper.clearfix
+        // home-block
+        .home-block.clearfix
+          h1.home-headline FEATURED WORK 
+          // thumbs
+          .clearfix
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-1.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-2.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-3.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-1.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-3.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            figure
+              a.thumb(href='single.html')
+                img(src='img/dummies/featured-2.jpg', alt='Alt text')
+              figcaption
+                strong Pellentesque habitant morbi
+                span
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+          // ENDS thumbs
+          a.theme-link-button(href='work.html') See All Work
+        // ENDS home-block
+        // additional blocks
+        .home-add.clearfix
+          // left
+          .left-home-block.home-posts
+            h4.heading FROM THE BLOG
+            article.format-standard
+              .entry-date
+                .number 23
+                .month JAN
+                .year 2011
+                em
+              .post-heading
+                h4
+                  a(href='single.html') Lorem ipsum dolor 
+              .excerpt
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            article.format-standard
+              .entry-date
+                .number 23
+                .month JAN
+                .year 2011
+                em
+              .post-heading
+                h4
+                  a(href='single.html') Lorem ipsum dolor 
+              .excerpt
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            article.format-standard
+              .entry-date
+                .number 23
+                .month JAN
+                .year 2011
+                em
+              .post-heading
+                h4
+                  a(href='single.html') Lorem ipsum dolor 
+              .excerpt
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+            article.format-standard
+              .entry-date
+                .number 23
+                .month JAN
+                .year 2011
+                em
+              .post-heading
+                h4
+                  a(href='single.html') Lorem ipsum dolor 
+              .excerpt
+                | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.
+          // ENDS left
+          // right
+          .right-home-block
+            h4.heading CLIENTS
+            // logos
+            ul.clients-logos.clearfix
+              li
+                a(href='#')
+                  img(src='img/dummies/logo1.png', alt='logo')
+              li
+                a(href='#')
+                  img(src='img/dummies/logo2.png', alt='logo')
+              li
+                a(href='#')
+                  img(src='img/dummies/logo3.png', alt='logo')
+              li
+                a(href='#')
+                  img(src='img/dummies/logo4.png', alt='logo')
+              li
+                a(href='#')
+                  img(src='img/dummies/logo5.png', alt='logo')
+              li
+                a(href='#')
+                  img(src='img/dummies/logo6.png', alt='logo')
+            // ENDS logos
+            h4.heading TESTIMONIALS
+            // testimonial slider
+            .flexslider.testimonial-slider
+              ul.slides
+                li
+                  | Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget.
+                  .client-name - Luis Zuno, Webdesigner
+                li
+                  | at vitae, ultricies eget, tempor sit amet, ante. Donec 
+                  .client-name - Luis Zuno, Webdesigner
+                li
+                  | Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.
+                  .client-name - Luis Zuno, Webdesigner
+            // ENDS testimonial slider
+          // ENDS right
+        // ENDS additional blocks
+        // Fold image
+        #fold
+    // ENDS MAIN
+
+  include ./frame/footer.jade
