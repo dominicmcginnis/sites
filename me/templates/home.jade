@@ -1,34 +1,10 @@
 doctype html
 html.no-js
   include ./frame/head.jade
-  include ./frame/header.jade
 
-    // slider holder
-    .clearfix
-    #slider-holder.clearfix
-      // slider
-      .flexslider.home-slider
-        ul.slides
-          li
-            img(src='img/slides/01.jpg', alt='alt text')
-          li
-            img(src='img/slides/02.jpg', alt='alt text')
-            p.flex-caption Pellentesque habitant morbi  feugiat vitae.
-          li
-            img(src='img/slides/03.jpg', alt='alt text')
-      // ENDS slider
-      .home-slider-clearfix
-      // Headline
-      #headline
-        h4 HELLO, I AM FREE
-        p.headline-text
-          | Simpler template is a totally FREE template for personal and commercial projects.
-        p.headline-text
-          | If you are looking for a WordPress version try the  
-          a.read-more(href='http://themeforest.net/item/simpler-wordpress-theme/1630783?ref=Ansimuz') Premium Version
-      // ENDS headline
-    // ENDS slider holder
-
+  body(lang='en')
+    include ./frame/header.jade
+  
     // MAIN
     #main
       .wrapper.clearfix
@@ -175,5 +151,4 @@ html.no-js
         // Fold image
         #fold
     // ENDS MAIN
-
-  include ./frame/footer.jade
+    include ./frame/footer.jade
