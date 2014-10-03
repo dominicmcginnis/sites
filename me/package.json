@@ -6,8 +6,8 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "4.9.x",
-    "jade" : ">= 1.7.x"
+    "express": "*",
+    "jade" : "*"
   },
   "engines": {
     "node": "0.10.x",

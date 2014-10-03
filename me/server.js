@@ -10,51 +10,43 @@ var express = require('express'),
 
 var app = express();
 
-app.configure(function() {
-  app.set('domain', domain);
-  app.set('port', process.env.PORT || 8080);
-  app.set('views', __dirname + '/templates');
-  //app.engine('html', require('ejs').renderFile);
-  // Set our default template engine to "jade"
-  app.set('view engine', 'jade');
-});
+app.set('domain', domain);
+app.set('port', process.env.PORT || 8080);
+app.set('views', __dirname + '/templates');
 
-app.use(express.static(pub));
-app.use(express.errorHandler());
+// Set our default template engine to "jade"
+app.set('view engine', 'jade');
+app.use("/", express.static(__dirname + "/public"));
 
 app.get('/', function(req, res){
-  res.render('index', { users: users });
+  res.render('home');
 });
 
-/*
 app.all('/index', function(req, res) {
-	res.render("index.html");
-});
-app.all('/home', function(req, res) {
-	res.render("index.html");
+	res.render("index");
 });
 app.all('/blog', function(req, res) {
-	res.render("blog.html");
+	res.render("blog");
 });
 app.all('/page', function(req, res) {
-	res.render("page.html");
+	res.render("page");
 });
 app.all('/page-elements', function(req, res) {
-	res.render("page-elements.html");
+	res.render("page-elements");
 });
 app.all('/page-icons', function(req, res) {
-	res.render("page-icons.html");
+	res.render("page-icons");
 });
 app.all('/page-typography', function(req, res) {
-	res.render("page-typography.html");
+	res.render("page-typography");
 });
 app.all('/portfolio', function(req, res) {
-	res.render("portfolio.html");
+	res.render("portfolio");
 });
 app.all('/contact', function(req, res) {
-	res.render("contact.html");
+	res.render("contact");
 });
-*/
+
 http.createServer(app).listen(app.get('port'), function(){
     console.log("Express server listening on port " + app.get('port'));
 });
